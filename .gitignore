@@ -2,6 +2,7 @@
 *.o
 *.a
 *.so
+zfsnap
 
 # Folders
 _obj
@@ -21,3 +22,5 @@ _testmain.go
 
 *.exe
 *.test
+
+.vagrant
