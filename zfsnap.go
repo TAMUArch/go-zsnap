@@ -8,11 +8,19 @@ import (
 	"github.com/jarosser06/go-zsnap/zsnap"
 )
 
+const zfsnapVersion = "0.1.0"
+
 func main() {
 	var action = flag.String("action", "create", "whether to remove or create a new snapshot")
 	var keep = flag.Int("keep", 5, "how many snapshots to keep")
 	var snapshotType = flag.String("type", "hourly", "what type of snapshot to create")
+	var version = flag.Bool("v", false, "prints current version of zfsnap")
 	flag.Parse()
+
+	if *version {
+		fmt.Println(zfsnapVersion)
+		os.Exit(0)
+	}
 
 	for _, volume := range flag.Args() {
 		vol := zsnap.Volume{Name: volume}
