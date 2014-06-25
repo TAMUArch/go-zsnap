@@ -3,6 +3,8 @@
 *.a
 *.so
 zfsnap
+*.tar.gz
+bin
 
 # Folders
 _obj
