@@ -2,11 +2,10 @@
 
 GOVERSION=1.3
 
-
-pushd /tmp
+pushd /tmp &> /dev/null
 wget http://public-mirror.tamu.edu/golang/go${GOVERSION}.omnios-amd64.tar.gz
 tar -xf go${GOVERSION}.omnios-amd64.tar.gz -C /opt
-popd
+popd &> /dev/null
 mkdir -p /export/home/vagrant/.go
 chown -R 100:100 /export/home/vagrant/.go
 echo "export PATH=\$PATH:/opt/go/bin" >> /export/home/vagrant/.profile

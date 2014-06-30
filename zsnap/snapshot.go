@@ -35,6 +35,8 @@ func (s *Snapshot) Parse() error {
 		s.Type = "weekly"
 		if err != nil {
 			return err
+		} else {
+			return nil
 		}
 		// Assume daily if timestamp no greater than 8 chars
 	} else if len(tmpStr) <= 8 {
@@ -42,15 +44,19 @@ func (s *Snapshot) Parse() error {
 		s.Type = "daily"
 		if err != nil {
 			return err
+		} else {
+			return nil
 		}
 	} else {
 		s.Creation, err = time.Parse(hourlyLayout, tmpStr)
 		s.Type = "hourly"
 		if err != nil {
 			return err
+		} else {
+			return nil
 		}
 	}
-	return nil
+	return errors.New(fmt.Sprintf("invalid snapshot name"))
 }
 
 // returns a time stamp based on hourly, daily, or weekly
