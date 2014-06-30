@@ -39,7 +39,7 @@ func main() {
 		} else if *action == "remove" {
 			vol.CleanupSnapshots(*snapshotType, *keep)
 		} else {
-			fmt.Println("Passed unsupported action: %s\n", *action)
+			fmt.Printf("Passed unsupported action: %s\n", *action)
 			os.Exit(1)
 		}
 	}
