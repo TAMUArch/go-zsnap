@@ -1,12 +1,12 @@
 VERSION = '0.1.0'
 
-all: clean build package
+all: build package
 
-test:
+test: build
 		@echo "Running tests"
 		go test zsnap/*
 
-build:
+build: clean
 		@echo "Building new binary"
 		bash --norc ./scripts/build.sh
 
