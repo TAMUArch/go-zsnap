@@ -2,7 +2,6 @@
 
 GOVERSION=1.3
 
-
 pushd /tmp
 wget http://public-mirror.tamu.edu/golang/go${GOVERSION}.omnios-amd64.tar.gz
 tar -xf go${GOVERSION}.omnios-amd64.tar.gz -C /opt
