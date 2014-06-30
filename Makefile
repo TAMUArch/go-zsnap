@@ -12,7 +12,7 @@ build: clean
 
 package:
 		@echo "Packaging up binary"
-		tar -czf zfsnap-$(VERSION).omnios.tar.gz bin/
+		@tar -czf zfsnap-$(VERSION).omnios.tar.gz bin/
 
 clean:
 		@echo "Cleaning up"
