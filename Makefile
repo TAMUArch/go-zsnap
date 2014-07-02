@@ -14,6 +14,10 @@ package:
 		@echo "Packaging up binary"
 		@tar -czf zfsnap-$(VERSION).omnios.tar.gz bin/
 
+deps:
+		@echo "Getting dependencies"
+		@go get github.com/jarosser06/go-zsnap/zsnap
+
 clean:
 		@echo "Cleaning up"
 		@rm -fr bin
