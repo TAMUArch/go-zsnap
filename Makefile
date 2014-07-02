@@ -2,7 +2,7 @@ VERSION = '0.1.1'
 
 all: build package
 
-test: build
+test:
 		@echo "Running tests"
 		go test zsnap/*
 
