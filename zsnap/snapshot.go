@@ -9,8 +9,8 @@ import (
 )
 
 const (
-	hourlyLayout = "2006012-1504"
-	dailyLayout  = "2006012"
+	hourlyLayout = "20060102-1504"
+	dailyLayout  = "20060102"
 	weeklyLayout = "200601"
 )
 
