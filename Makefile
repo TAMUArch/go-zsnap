@@ -12,11 +12,11 @@ build: clean
 
 package:
 		@echo "Packaging up binary"
-		@tar -czf zfsnap-$(VERSION).omnios.tar.gz bin/
+		@tar -czf zfsnap-$(VERSION).ubuntu1604.tar.gz bin/
 
 deps:
 		@echo "Getting dependencies"
-		@go get github.com/jarosser06/go-zsnap/zsnap
+		@go get github.com/TAMUArch/go-zsnap/zsnap
 
 clean:
 		@echo "Cleaning up"

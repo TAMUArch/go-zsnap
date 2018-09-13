@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/jarosser06/go-zsnap/zsnap"
+	"github.com/TAMUArch/go-zsnap/zsnap"
 )
 
 const zfsnapVersion = "0.1.2"
