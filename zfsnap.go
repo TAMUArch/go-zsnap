@@ -8,7 +8,7 @@ import (
 	"github.com/TAMUArch/go-zsnap/zsnap"
 )
 
-const zfsnapVersion = "0.1.2"
+const zfsnapVersion = "0.2.0"
 
 func main() {
 	var action = flag.String("action", "create", "whether to remove or create a new snapshot")

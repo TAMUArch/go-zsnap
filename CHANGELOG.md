@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.2.0 (2018-09-13)
+- dumped omnios, added u16.04
+
 ## 0.1.2 (2018-09-13)
 - merge jarosser's fix of day padding
 
