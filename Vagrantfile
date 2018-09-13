@@ -5,7 +5,7 @@
 VAGRANTFILE_API_VERSION = "2"
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
-  config.vm.box = "jarosser06/omnios-r151010j"
+  config.vm.box = "ubuntu/xenial64"
   config.vm.synced_folder ".", "/opt/zfsnap"
   config.vm.provision "shell", path: "scripts/provision.sh"
 end
