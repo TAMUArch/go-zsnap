@@ -8,7 +8,7 @@ import (
 	"github.com/jarosser06/go-zsnap/zsnap"
 )
 
-const zfsnapVersion = "0.1.1"
+const zfsnapVersion = "0.1.2"
 
 func main() {
 	var action = flag.String("action", "create", "whether to remove or create a new snapshot")

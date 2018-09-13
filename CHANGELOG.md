@@ -1,5 +1,8 @@
 # Changelog
 
+## 0.1.2 (2018-09-13)
+- merge jarosser's fix of day padding
+
 ## 0.1.1 (2014-06-29)
 - fixed unused error return in snapshot Parse()
 - fixed broken error message for unsupported action
